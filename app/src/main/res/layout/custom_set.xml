@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_set"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/textView"
+                android:layout_weight="1.5"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/textView13" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="한도금액"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Amount"
+                android:layout_weight="1.5" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/Amount_set"
+                android:inputType="numberDecimal"
+                android:hint="입력" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="알림문자"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alram"
+                android:layout_weight="1.5" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textShortMessage"
+                android:ems="10"
+                android:id="@+id/alram_set" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:id="@+id/custom_list" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="설정"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/set_button"
+                android:elevation="0dp"
+                android:onClick="insert_add_Element"
+                android:layout_weight="10"
+                android:layout_marginLeft="35dp" />
+
+            <Button
+                android:text="뒤로"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cancel_button"
+                android:layout_weight="0"
+                android:elevation="0dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="40dp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:text="사용자설정"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:id="@+id/add_title"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        tools:gravity="center_vertical" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
